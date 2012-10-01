@@ -241,14 +241,10 @@ static float normf(float start, float stop, float value) {
 static void drawNight(int width, int height) {
     rsgBindTexture(gPFBackground, 0, gTNight);
     rsgDrawQuadTexCoords(
-            0.0f, -32.0f, 0.0f,
-            0.0f, 1.0f,
-            0.0f, 1024.0f - 32.0f, 0.0f,
-            0.0f, 0.0f,
-            width, 1024.0f - 32.0f, 0.0f,
-            2.0f, 0.0f,
-            width, -32.0f, 0.0f,
-            2.0f, 1.0f);
+            0.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+            0.0f, height + 64.0f, 0.0f, 1.0f, 1.0f,
+            width, height + 64.0f, 0.0f, 0.0f, 1.0f,
+            width, 0.0f, 0.0f, 1.0f, 0.0f);
 }
 
 static void drawSunrise(int width, int height) {
